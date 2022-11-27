@@ -369,15 +369,14 @@ body * {
 .first {
     background-image: url('../images/backgroung.jpg');
     background-size: cover;
-    height: 707px;
+    padding-bottom: 208px;
     padding-top: 194px;
     position: relative;
 }
 
 .second {
     background-color: #131313;
-    height: 1074px;
-    padding-bottom: 90px;
+    padding-bottom: 400px;
 }
 
 .third {
@@ -408,7 +407,7 @@ body * {
     background-image: url(../images/backgrond-3.jpg);
     background-size: cover;
     position: relative;
-    height: 954px;
+    padding-bottom: 65px;
 }
 
 .background-overlay {
@@ -539,8 +538,7 @@ body * {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    height: 434px;
-    width: 817px;
+    height: 100%;
 }
 
 .control-img:before{
@@ -893,9 +891,9 @@ body * {
     }
 
     .completed-projects-img {
-        width: 100%;
         position: relative;
         bottom: 250px;
+        width: 70%;
     }
 
     .fifth {
@@ -957,7 +955,8 @@ body * {
 
     .completed-projects-mobile {
         display: flex;
-        justify-content: center;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .mobile-only {
@@ -989,6 +988,14 @@ body * {
 
     .camera {
         order: 3;
+    }
+
+    .repair-form2 {
+        transform: none;
+    }
+
+    .fourth {
+        max-height: 100%;
     }
 
 }
