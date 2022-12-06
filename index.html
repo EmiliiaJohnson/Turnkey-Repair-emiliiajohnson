@@ -22,8 +22,8 @@
              <li class="header-navigation-item"><a href="#">REVIEWS</a></li>
              <li class="header-navigation-item"><a href="#">CONTACTS</a></li>
             </ul>     
-        </nav> 
-             <span class="phone-number"><a href="tel:+79287683239">+7 (928) 768-32-39</a></span>
+        </nav> <span class="phone-number"><a href="tel:+79287683239">+7 (928) 768-32-39</a></span>
+             
              <button class="button button-first pointer">Request a call</button>
          </div>
     </header>
@@ -33,12 +33,12 @@
                 <h1 class="title-h1">
                     Turnkey Repair in the <br>city of <span class="city-color">Rostov-on-Don</span>
                 </h1>
-                <p class="p-info">Get ready-made turnkey repairs on time <br>
-                    with work time saving up to 45 days and 20% from <br>
+                <p class="p-info">Get ready-made turnkey repairs on time <br class="br">
+                    with work time saving up to 45 days and 20% from <br class="br">
                     cost of materials due to the organization of work</p>
                     <div class="wrapper second-navigation">
                         <button class="button button-calculate pointer">CALCULATE THE COST</button>
-                        <button class="button button-application pointer">SUBMIT YOUR APPLICATION</button>
+                        <button class="button button-application pointer"></button>
                     </div>
             </div>
             <div class="background-overlay"></div>
@@ -54,8 +54,8 @@
             <div class="completed-projects wrapper">
             <div class="completed-projects-title">
             <h2 class="title-h2">Completed <br> projects</h2>
-            <p class="p2">Only a small part of the work performed by our company is presented <br> 
-                on the site. For 14 years on in the construction <br>
+            <p class="p2">Only a small part of the work performed by our company is presented <br class="br"> 
+                on the site. For 14 years on in the construction <br class="br">
                 market we have made happy more than 1000 families</p>
                 <div class="completed-projects-info">
                     <div>
@@ -63,12 +63,12 @@
                         <span class="p2 p3">Rostov-on-Don <br> LCD admiral</span>
                     </div>
                     <div>
-                        <h3 class="title-h3">Repair time:</h3>
-                        <span class="p2 p3">3.5 months</span>
-                    </div>
-                    <div>
                         <h3 class="title-h3">apartment area:</h3>
                         <span class="p2 p3">81 m2</span>
+                    </div>
+                    <div>
+                        <h3 class="title-h3">Repair time:</h3>
+                        <span class="p2 p3">3.5 months</span>
                     </div>
                     <div>
                         <h3 class="title-h3">Repair Cost:</h3>
@@ -83,11 +83,15 @@
                 <button class="arrow-right pointer"><img src="./images/right.svg" alt="right arrow"></button>
                      </div>
                 </div>
+                <img class="completed-projects-img" src="./images/completed-projects.svg" alt="completed-projects">    
                     <div class="completed-projects-mobile">
-                        <img class="mobile-only" src="./images/button-left.svg">
-                        <img class="mobile-only" src="./images/button-right.svg">
+                        <div class="mobile-only">
+                            <img class="left" src="./images/button-left.svg">
+                            <img class="right" src="./images/button-right.svg">
+                        </div>
+                        <img class="completed-img-mobile" src="./images/completed-img-mobile.svg" alt="completed-projects">
                     </div>
-                    <img class="completed-projects-img" src="./images/completed-projects.png" alt="completed-projects">
+                    
             </div>
         </section>
         <section class="third">
@@ -103,9 +107,9 @@
                         <img class="play-button pointer" src="./images/play-button.svg" alt="play button">
                     </div>
                     <hr class="hr">
-                    <p class="control-info p2">At each facility, a camera is installed that broadcasts the progress of work on the <br> 
-                        clock. At any time, you can go to our website and monitor the progress of work in <br> 
-                        your apartment. You can watch the live broadcast from one of our facilities! <br>
+                    <p class="control-info p2">At each facility, a camera is installed that broadcasts the progress of work on the <br class="br"> 
+                        clock. At any time, you can go to our website and monitor the progress of work in <br class="br"> 
+                        your apartment. You can watch the live broadcast from one of our facilities! <br class="br">
                         Leave a request below and you will receive a link to the broadcast.</p>
                         <form action="#" class="name-phone-form">
                             <label class="name-phone">Name<input class="name-phone-input p2" name="name" type="text" placeholder="What's your name?"></label>
@@ -125,7 +129,7 @@
                 </div>
                 <div class="repair-div name-phone-form">
                         <div class="repair">
-                            <img class="repair-img" src="./images/redecorating.jpg" alt="redecorating">
+                            <img class="repair-img" src="./images/redecorating.svg" alt="redecorating">
                             <div class="repair-info">
                                 <p class="title-h3 repair-p">Redecorating</p>
                                 <ul class="repair-list p2">
@@ -141,7 +145,7 @@
                             </div>
                         </div>
                         <div class="repair">
-                            <img class="repair-img" src="./images/overhaul.jpg" alt="overhaul">
+                            <img class="repair-img" src="./images/overhaul.svg" alt="overhaul">
                             <div class="repair-info">
                                 <p class="title-h3 repair-p">Overhaul</p>
                                 <ul class="repair-list p2">
@@ -157,7 +161,7 @@
                             </div>
                         </div>
                         <div class="repair">
-                            <img class="repair-img" src="./images/repair.jpg" alt="designer repair">
+                            <img class="repair-img" src="./images/repair.svg" alt="designer repair">
                             <div class="repair-info">
                                 <p class="title-h3 repair-p">Designer Repair</p>
                                 <ul class="repair-list p2">
@@ -244,19 +248,26 @@
                             <li class="fantasies-list"><a href="#">Eclecticism</a></li>
                         </ul>
                     </div>
-                    <div class="fantasies-img">
+                    <div class="completed-projects-mobile">
+                        <div class="mobile-only fantasies-button">
+                            <img class="left" src="./images/button-left.svg">
+                            <img class="right" src="./images/button-right.svg">
+                        </div>
+                        <img class="completed-img-mobile" src="./images/fantasies-mobile.svg" alt="completed-projects">
+                    </div>
+                        <div class="fantasies-img">
                         <div class="fantasies-img-div1"> 
-                            <img class="fantasies-img-single" src="./images/fantasies1.jpg">
-                            <img src="./images/fantasies2.jpg">
+                            <img class="fantasies-img-single" src="./images/fantasies1.svg">
+                            <img src="./images/fantasies2.svg">
                         </div>
                         <div class="fantasies-img-div2">
-                            <img class="fantasies-img-single" src="./images/fantasies3.jpg">
-                            <img src="./images/fantasies4.jpg">
+                            <img class="fantasies-img-single" src="./images/fantasies3.svg">
+                            <img src="./images/fantasies4.svg">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="background-overlay"></div>
+            <div class="background-overlay3"></div>
         </section>
         <section class="seventh">
             <div class="wrapper">
@@ -341,12 +352,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="eight-mobile">
                 <h3 class="h3-control title-h3 question-h3">Rostov-on-Don, Nansen St., 239 Shopping Center <br> Decorum Tel +7 (928) 768 32 29</h3>
                 <div class="camera">
-                    <img class="icon" src="./images/mail.svg">
-                    <img src="./images/insta.svg">
+                    <img class="icon icon-mobile" src="./images/mail.svg">
+                    <img class="icon-mobile" src="./images/insta.svg">
                 </div>
+                <img class="map-mobile" src="./images/map-mobile.svg" alt="we are there">
                 <img class="map" src="./images/map.jpg" alt="we are there">
+                </div>
             </div>
         <div class="background-overlay background-overlay2"></div>
         </section>
@@ -365,8 +379,8 @@
               <li class="header-navigation-item"><a href="#">REVIEWS</a></li>
               <li class="header-navigation-item"><a href="#">CONTACTS</a></li>
              </ul>     
+             <span class="phone-number"><a href="tel:+79287683239">+7 (928) 768-32-39</a></span>
          </nav> 
-              <span class="phone-number"><a href="tel:+79287683239">+7 (928) 768-32-39</a></span>
               <button class="button pointer button-first">Request a call</button>
         </div>
     </footer>
