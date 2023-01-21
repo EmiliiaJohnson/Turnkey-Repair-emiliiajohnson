@@ -67,7 +67,6 @@ function initSlider() {
   function initArrows() {
     sliderTools.querySelectorAll('.arrow').forEach(arrow => {
       arrow.addEventListener('click', function() {
-        console.log('click');
         let currentNum = +sliderImages.querySelector('.active').dataset.index;
         let nextNum;
         if (arrow.classList.contains('arrow-left')) {
@@ -83,7 +82,6 @@ function initSlider() {
     function initButtons() {
       sliderToolsMobile.querySelectorAll('.round-button').forEach (btn => {
         btn.addEventListener('click', function() {
-          console.log('click');
           let currentNum = +sliderImagesMobile.querySelector('.active').dataset.index;
           let nextNum;
           if (btn.classList.contains('left')) {
