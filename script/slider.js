@@ -25,7 +25,9 @@ function initSlider() {
   if (!images || !images.length) return;
   
   let sliderImages = document.querySelector('.completed-projects-img');
+  let sliderImagesMobile = document.querySelector('.completed-img-mobile');
   let sliderTools = document.querySelector('.sliderTools');
+  let sliderToolsMobile = document.querySelector('.sliderToolsMobile');
   let sliderDots = document.querySelector('.dots');
   let sliderTitles = document.querySelector('.project-titles');
   let sliderCity = document.querySelector('.info.info-city');
@@ -39,11 +41,13 @@ function initSlider() {
   initTitles();
   initInfo();
   initAutoplay();
+  initButtons();
 
   function initImages() {
     images.forEach((image, index) => {
       let imageDiv = `<div class='image n${index} ${index === 0 ? 'active' : ''}' style='background-image:url(${images[index].url});' data-index='${index}'></div>`;
       sliderImages.innerHTML += imageDiv;
+      sliderImagesMobile.innerHTML += imageDiv;
     });
   }
 
@@ -63,6 +67,7 @@ function initSlider() {
   function initArrows() {
     sliderTools.querySelectorAll('.arrow').forEach(arrow => {
       arrow.addEventListener('click', function() {
+        console.log('click');
         let currentNum = +sliderImages.querySelector('.active').dataset.index;
         let nextNum;
         if (arrow.classList.contains('arrow-left')) {
@@ -74,6 +79,22 @@ function initSlider() {
       });
       });
     }
+
+    function initButtons() {
+      sliderToolsMobile.querySelectorAll('.round-button').forEach (btn => {
+        btn.addEventListener('click', function() {
+          console.log('click');
+          let currentNum = +sliderImagesMobile.querySelector('.active').dataset.index;
+          let nextNum;
+          if (btn.classList.contains('left')) {
+            nextNum = currentNum === 0 ? images.length - 1 : currentNum - 1;
+          } else {
+            nextNum = currentNum === images.length - 1 ? 0 : currentNum + 1;
+          }
+          moveSlider(nextNum);
+        });
+      });
+      }
 
     function initDots() {
       images.forEach((image, index) => {
@@ -102,6 +123,8 @@ function initSlider() {
     function moveSlider(num) {
       sliderImages.querySelector('.active').classList.remove('active');
       sliderImages.querySelector('.n' + num).classList.add('active');
+      sliderImagesMobile.querySelector('.active').classList.remove('active');
+      sliderImagesMobile.querySelector('.n' + num).classList.add('active');
       sliderDots.querySelector('.active').classList.remove('active');
       sliderDots.querySelector('.n' + num).classList.add('active');
       sliderTitles.querySelector('.active').classList.remove('active');
